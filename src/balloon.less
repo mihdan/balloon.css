@@ -3,6 +3,7 @@
 // -----------------------------------------
 
 @balloon-bg:         fade(#111, 90%);
+@balloon-color:         #333;
 @balloon-font-size:  12px;
 @balloon-arrow-size: 6px;
 
@@ -99,7 +100,7 @@
     &:before {
         background: @balloon-bg;
         border-radius: @balloon-font-size / 3;
-        color: #fff;
+        color: @balloon-color;
         content: attr(data-balloon);
         font-size: @balloon-font-size;
         padding: .5em 1em;
